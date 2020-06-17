@@ -5,7 +5,7 @@ import Letter from './Letter';
 const LETTERS = "A,B,C,D,E,F,G,H,I,J,K,L,M,O,P,Q,R,S,T,U,V,W,X,Y,Z"
 export default class App extends Component {
   state = {
-    hiddenWord: "github",
+    hiddenWord: "github".toUpperCase(),
     letters: this.generateLetters(),
     inputLetters: [],
     tries: 0,
