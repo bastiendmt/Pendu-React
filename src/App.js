@@ -19,14 +19,18 @@ export default class App extends Component {
   handleClickLetter = (letter) => {
     const { inputLetters, tries } = this.state
     // Pour les lettres non rentrées
-    if (!inputLetters.includes(letter)) {
-      this.setState({
-        inputLetters: [...inputLetters, ...letter],
-        tries: tries + 1,
-
-      },
-        () => this.upadateDisplayedWord(),
-        () => this.displayPendu())
+    if (tries + 1 < 10) {
+      if (!inputLetters.includes(letter)) {
+        this.setState({
+          inputLetters: [...inputLetters, ...letter],
+          tries: tries + 1,
+        },
+          () => this.upadateDisplayedWord(),
+          () => this.displayPendu())
+      }
+    } else {
+      alert('Vous avez perdu !')
+      this.resetGame()
     }
   }
 
