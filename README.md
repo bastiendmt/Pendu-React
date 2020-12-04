@@ -1,3 +1,13 @@
+# Projet
+This is a hangman project made during a online lesson teaching React.
+
+Running demo [here](https://country-rank.bastiendmt.vercel.app/)
+
+## Preview
+![hangman](/preview/pendu.png)
+
+## About
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
