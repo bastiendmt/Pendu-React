@@ -1,27 +1,28 @@
-.pendu>.letter {
-    font-size: 1.6em;
-    flex: 1 1 calc(100% / 13 - 0.4em);
-    outline: 0.08em solid silver;
-    margin: 0.2em;
-    display: flex;
-    cursor: default;
-    justify-content: center;
+.pendu > .letter {
+  font-size: 1.6em;
+  flex: 1 1 calc(100% / 13 - 0.4em);
+  border-radius: 3px;
+  margin: 0.2em;
+  display: flex;
+  cursor: default;
+  justify-content: center;
 }
 
-.pendu>.letter.normal {
-    background: silver;
-    cursor: pointer;
+.pendu > .letter.normal {
+  background: silver;
+  cursor: pointer;
 }
 
-.pendu>.letter.correct {
-    outline: 0.1em solid green;
+.pendu > .letter.correct {
+  outline: 0.1em solid green;
 }
 
-.pendu>.letter.incorrect {
-    outline-color: red;
+.pendu > .letter.incorrect {
+  outline: 0.08em solid;
+  outline-color: red;
 }
 
-.pendu>.letter.incorrect,
-.pendu>.letter.correct {
-    cursor: not-allowed;
+.pendu > .letter.incorrect,
+.pendu > .letter.correct {
+  cursor: not-allowed;
 }

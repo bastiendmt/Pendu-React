@@ -31,6 +31,6 @@
 
 .pendu>.resetButton span {
   padding: 0.5em;
-  border-radius: 1em;
+  border-radius: 3px;
   background-color: beige;
 }
